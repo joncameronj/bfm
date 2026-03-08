@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function TheProblem() {
   return (
     <section
@@ -37,12 +39,13 @@ export default function TheProblem() {
         </div>
 
         <div className="mt-10 flex items-center justify-center">
-          <div
-            className="flex h-48 w-full max-w-lg items-center justify-center rounded-[var(--radius-lg)] bg-gray-300 text-footnote text-[var(--color-tertiary-label)]"
-            aria-hidden="true"
-          >
-            Cell Energy Graphic
-          </div>
+          <Image
+            src="/cell-energy.jpeg"
+            alt="Cell energy and mitochondrial function"
+            width={512}
+            height={384}
+            className="w-full max-w-lg rounded-[var(--radius-lg)]"
+          />
         </div>
 
         <div className="bg-brand-gradient mt-10 rounded-[var(--radius-xl)] px-8 py-6 text-center">
