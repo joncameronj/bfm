@@ -4,9 +4,9 @@ const topics = [
   {
     title: "Why You're Really Sick",
     subtitle:
-      "The mitochondrial model of disease — explained in plain language",
+      "The mitochondrial model of disease - explained in plain language",
     bullets: [
-      "Why 80% of chronic disease isn't genetic — it's energetic",
+      "Why 92% of chronic disease isn't genetic - it's energetic",
       'What "energetic debt" means and why it matters more than any blood test',
       "How your cells lose the ability to produce energy over time",
     ],
@@ -16,7 +16,7 @@ const topics = [
     title: "The 5 Levers Nobody Tests",
     subtitle: "The biomarkers your doctor has never checked",
     bullets: [
-      "Melatonin, Leptin, Vitamin D, MSH, Ubiquitin — and why they matter",
+      "Melatonin, Leptin, Vitamin D, MSH, Ubiquitin - and why they matter",
       "Why standard blood work misses the real picture",
       "How these markers predict disease years before symptoms appear",
     ],
@@ -28,7 +28,7 @@ const topics = [
     bullets: [
       "How circadian rhythm disruption drives chronic inflammation",
       "Why morning sunlight is more powerful than most supplements",
-      "The EMF exposure problem — and what you can actually do about it",
+      "The EMF exposure problem - and what you can actually do about it",
     ],
     color: "rgb(20,10,255)",
   },
