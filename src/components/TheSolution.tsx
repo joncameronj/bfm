@@ -23,7 +23,7 @@ const pillars = [
     label: "Pillar 2",
     title: "Heteroplasmy",
     description:
-      "The damage to your mitochondrial DNA that accumulates over time from environmental stressors. The good news? It can be reversed.",
+      "The damage to your mitochondrial DNA that accumulates over time from environmental stressors. The good news - it can be reversed.",
     content: (
       <Image
         src="/heteroplasmy.png"
@@ -66,7 +66,7 @@ export default function TheSolution() {
             The 3 Hidden Pillars That Control Whether You Heal or Stay Sick
           </h2>
           <p className="mx-auto mt-4 max-w-[580px] text-body text-[var(--color-secondary-label)]">
-            Dr. Rob will show you how these 3 pillars interact — and the
+            Dr. Rob will show you how these 3 pillars interact - and the
             specific things you can start doing immediately to rebuild your
             health from the cellular level up.
           </p>
@@ -158,7 +158,6 @@ const ScrollContentMobile = memo(function ScrollContentMobile({
 }) {
   return (
     <div className="relative my-10 flex flex-col gap-8">
-      <div className="w-full self-start rounded-[var(--radius-lg)]">{item.content}</div>
       <div className="w-full">
         <p className="text-subheadline mb-2 font-semibold uppercase tracking-widest text-brand-gradient">
           {item.label}
@@ -170,6 +169,7 @@ const ScrollContentMobile = memo(function ScrollContentMobile({
           {item.description}
         </p>
       </div>
+      <div className="w-full self-start rounded-[var(--radius-lg)]">{item.content}</div>
     </div>
   );
 });
