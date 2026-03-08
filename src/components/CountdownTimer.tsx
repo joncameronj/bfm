@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 
-const EVENT_DATE = new Date("2026-03-14T18:00:00Z");
+const EVENT_DATE = new Date("2026-03-14T17:00:00Z");
 
 function calculateTimeLeft() {
   const diff = EVENT_DATE.getTime() - Date.now();
