@@ -23,6 +23,22 @@ export const metadata: Metadata = {
     description:
       "Discover the bioenergetic model helping people take back their health. Free live event March 14th.",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-cover.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Beyond Functional Medicine",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Free Live Training: The Hidden Reason You're Still Sick | Dr. Rob DeMartino",
+    description:
+      "Discover the bioenergetic model helping people take back their health. Free live event March 14th.",
+    images: ["/opengraph-cover.jpg"],
   },
 };
 
