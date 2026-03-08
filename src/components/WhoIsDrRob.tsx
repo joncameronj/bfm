@@ -7,7 +7,7 @@ export default function WhoIsDrRob() {
         <div className="flex items-center justify-center">
           <Image
             src="/rob-demartino.webp"
-            alt="Dr. Rob DeMartino standing in blue scrubs"
+            alt="Dr. Rob DeMartino, DC standing in blue scrubs"
             width={640}
             height={800}
             className="aspect-[3/4] w-full max-w-sm rounded-[var(--radius-lg)] object-cover"
@@ -19,7 +19,7 @@ export default function WhoIsDrRob() {
             id="dr-rob-heading"
             className="text-title-2 md:text-title-1 text-[var(--color-label)]"
           >
-            Who is Dr. Rob DeMartino?
+            Who is Dr. Rob DeMartino, DC?
           </h2>
 
           <div className="mt-6 space-y-4 text-body text-[var(--color-secondary-label)]">

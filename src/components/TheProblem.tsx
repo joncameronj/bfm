@@ -24,7 +24,7 @@ export default function TheProblem() {
           <p>
             Here&apos;s the truth:{" "}
             <strong className="text-[var(--color-label)]">
-              80% of chronic disease isn&apos;t genetic &mdash; it&apos;s
+              92% of chronic disease isn&apos;t genetic &mdash; it&apos;s
               energetic.
             </strong>{" "}
             Your mitochondria &mdash; the power plants inside every cell &mdash;

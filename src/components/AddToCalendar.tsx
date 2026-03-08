@@ -1,6 +1,6 @@
 "use client";
 
-const EVENT_TITLE = "BFM Live Training with Dr. Rob DeMartino";
+const EVENT_TITLE = "BFM Live Training with Dr. Rob DeMartino, DC";
 const EVENT_DESCRIPTION =
   "Free live training on the bioenergetic model of health. Join via Zoom: https://us02web.zoom.us/meeting/register/4UmEhSpkSFuShdukqTRaQQ";
 const EVENT_LOCATION =
@@ -43,7 +43,7 @@ function generateICS() {
     link.click();
     URL.revokeObjectURL(url);
   } catch {
-    // Silently fail — user can manually add event
+    // Silently fail - user can manually add event
   }
 }
 

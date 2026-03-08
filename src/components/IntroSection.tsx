@@ -14,7 +14,7 @@ export default function IntroSection() {
           </h2>
           <div className="mt-6 space-y-4 text-body text-[var(--color-secondary-label)]">
             <p>
-              For over 20 years, Dr. Rob DeMartino has been treating patients
+              For over 20 years, Dr. Rob DeMartino, DC has been treating patients
               that conventional medicine gave up on. People with chronic fatigue,
               autoimmune conditions, brain fog, and symptoms that no doctor could
               explain.

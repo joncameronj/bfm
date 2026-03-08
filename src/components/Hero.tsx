@@ -44,7 +44,7 @@ export default function Hero() {
           data-reveal="200"
           className="text-body mx-auto mt-6 max-w-[580px] italic text-[var(--color-secondary-label)] opacity-0"
         >
-          Join Dr. Rob DeMartino for a FREE live training where he pulls back
+          Join Dr. Rob DeMartino, DC for a FREE live training where he pulls back
           the curtain on why your body is losing energy &mdash; and exactly what
           you can do to fix it.
         </p>
