@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-const EVENT_DATE = new Date("2026-03-14T18:00:00Z");
+const EVENT_DATE = new Date("2026-03-14T17:00:00Z");
 
 export default function TimezoneDisplay() {
   const [display, setDisplay] = useState<string | null>(null);
