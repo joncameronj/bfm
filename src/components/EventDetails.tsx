@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 
-const EVENT_START = new Date("2026-03-14T18:00:00Z");
-const EVENT_END = new Date("2026-03-15T01:00:00Z");
+const EVENT_START = new Date("2026-03-14T17:00:00Z");
+const EVENT_END = new Date("2026-03-14T18:00:00Z");
 const ZOOM_URL =
   "https://us02web.zoom.us/meeting/register/4UmEhSpkSFuShdukqTRaQQ";
 
@@ -39,7 +39,6 @@ export default function EventDetails() {
     const tzCards: TZCard[] = [
       { label: "Your Time", timezone: visitorTZ, highlighted: true },
       { label: "Pacific Time", timezone: "America/Los_Angeles", highlighted: false },
-      { label: "Eastern Time", timezone: "America/New_York", highlighted: false },
     ];
     const seen = new Set<string>();
     const deduped = tzCards.filter((card) => {
@@ -61,8 +60,8 @@ export default function EventDetails() {
           >
             The Details (What You Need to Know)
           </h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {[1, 2, 3].map((i) => (
+          <div className="mt-10 grid gap-6 md:grid-cols-2 max-w-[680px] mx-auto">
+            {[1, 2].map((i) => (
               <div key={i} className="skeleton h-[240px] rounded-[var(--radius-xl)]" />
             ))}
           </div>
@@ -81,13 +80,13 @@ export default function EventDetails() {
           The Details (What You Need to Know)
         </h2>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 max-w-[680px] mx-auto">
           {cards.map((card) => (
             <div
               key={card.label}
               className="rounded-[var(--radius-xl)] p-6 text-center"
               style={{
-                backgroundColor: "#1D1D1F",
+                backgroundColor: card.highlighted ? "#1D1D1F" : "#F5F5F7",
                 ...(card.highlighted
                   ? { boxShadow: "0 0 0 2px var(--color-cyan)" }
                   : {}),
@@ -98,19 +97,19 @@ export default function EventDetails() {
                   Your Timezone
                 </span>
               )}
-              <p className="text-subheadline font-medium text-[var(--color-quaternary-label)]">
+              <p className={`text-subheadline font-medium ${card.highlighted ? "text-[var(--color-quaternary-label)]" : "text-gray-500"}`}>
                 {card.label}
               </p>
-              <p className="text-headline mt-2 text-white">
+              <p className={`text-headline mt-2 font-semibold ${card.highlighted ? "text-white" : "text-[var(--color-label)]"}`}>
                 {formatDate(EVENT_START, card.timezone)}
               </p>
-              <p className="mt-1 text-[24px] font-bold text-white" style={{ letterSpacing: "-0.02em" }}>
+              <p className={`mt-1 text-[24px] font-bold ${card.highlighted ? "text-white" : "text-[var(--color-label)]"}`} style={{ letterSpacing: "-0.02em" }}>
                 {formatTime(EVENT_START, card.timezone)}
               </p>
-              <p className="text-subheadline mt-1 text-[var(--color-quaternary-label)]">
+              <p className={`text-subheadline mt-1 ${card.highlighted ? "text-[var(--color-quaternary-label)]" : "text-gray-500"}`}>
                 to {formatTime(EVENT_END, card.timezone)}
               </p>
-              <p className="text-footnote mt-3 text-[var(--color-quaternary-label)]">
+              <p className={`text-footnote mt-3 ${card.highlighted ? "text-[var(--color-quaternary-label)]" : "text-gray-500"}`}>
                 Live Over Zoom
               </p>
               <a

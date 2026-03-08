@@ -11,7 +11,7 @@ const faqs = [
   {
     question: "I'm already seeing a doctor. Is this still for me?",
     answer:
-      "Absolutely. This isn't about replacing your doctor — it's about understanding what they're not testing and what you can do in addition to conventional care.",
+      "Absolutely. This isn't about replacing your doctor - it's about understanding what they're not testing and what you can do in addition to conventional care.",
   },
   {
     question: "Do I need any medical background to understand this?",
